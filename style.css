@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'Sohne';
+  src: url(font/TestSöhne-Buch.otf);
+}
+
+@font-face {
+  font-family: 'Google-Sans';
+  src: url(font/ProductSans-Black.ttf);
+}
+/* === Styling Navbar ====*/
+.navbar {
+  font-family: 'Poppins', 'Google-Sans';
+  font-size: 14px !important;
+}
+
+.navbar.scrolled {
+  background-color: white; /* Ganti warna latar belakang saat navbar digulir */
+  border-bottom: 1px solid black !important;
+  transition: background-color 0.3s ease; /* Efek transisi ketika warna latar belakang berubah */
+  opacity: 100%;
+}
+.navbar-brand {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.offcanvas {
+  width: 70% !important;
+}
+
+/* === End Styling Navbar === */
+
+/* === Styling Section === */
+section {
+  letter-spacing: 2px;
+}
+h1,
+h5,
+h6 {
+  font-family: 'Poppins', 'Google-Sans';
+  font-size: 14px !important;
+}
+
+h4 {
+  color: darkcyan;
+}
+/* === End Styling Section === */
+
+/* === Styling Judul === */
+.judul {
+  font-family: 'Poppins', 'Google-Sans';
+  text-align: center;
+  font-size: 50px !important;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* === End Styling Judul === */
+
+/* === Styling Visi & Misi === */
+.card {
+  margin-bottom: 30px;
+}
+
+/* === End Styling Visi & Misi === */
+
+/* ==== Carousel ==== */
+
+/* === ENd styling Carousel */
+/* === Styling Icon === */
+.bi {
+  font-size: 50px;
+}
+/* === Styling Footer === */
+footer a:hover {
+  opacity: 30%;
+  color: white !important;
+}
+/* === End Styling Footer === */
+
+/* === Breakpoint === */
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin: 0 auto;
+  }
+
+  .navbar-brand:hover {
+    transition: 0.3s all ease-in-out;
+    opacity: 70%;
+  }
+  /* .navbar img {
+    width: 15%;
+    height: 15%;
+  } */
+  section {
+    padding-top: 90px;
+  }
+  section img {
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 20px;
+  }
+  .carousel {
+    padding-top: 100px;
+  }
+  .carousel img {
+    max-height: 50% !important;
+    width: 100% !important;
+  }
+
+  #homePenusa {
+    display: none;
+  }
+
+  .card-text {
+    transform: scale(1);
+  }
+  .offcanvas-body ul {
+    font-size: 16px;
+  }
+
+  .section-title::after {
+    width: 30%;
+  }
+  .iframe {
+    overflow-x: hidden;
+  }
+
+  .judul {
+    font-size: 40px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carousel {
+    display: none;
+  }
+
+  .judul {
+    margin-top: 120px;
+  }
+}
+/* === End Breakpoint === */
