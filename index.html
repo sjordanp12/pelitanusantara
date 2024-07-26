@@ -82,7 +82,11 @@
 
     <!-- End -->
     <!-- Start PMB -->
-    <div class="container-fluid carousel">
+    <div class="container-fluid carousel background">
+      <div class="row">
+        <div class="col"><marquee class="judull" behavior="scroll" direction="up" scrolldelay="100">PENERIMAAN MAHASISWA BARU STMIK PELITA NUSANTARA</marquee></div>
+      </div>
+
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -121,10 +125,10 @@
           <div class="col-md-4">
             <div class="fs-3 fw-bold">Sejarah Penusa</div>
             <p>
-              <span class="text-primary fw-bold">STMIK Pelita Nusantara </span>didirikan pada tanggal 05 September 2003 dengan Akte Pendirian Nomor 16 yang dikeluarkan oleh Notaris Gongga Marpaung, SH. Sebelumnya terdapat perubahan nama dan
-              alih kelola dari Sekolah Tinggi Manajemen Informatika dan Komputer TAFEINDO(Tunggal Adicita Falsafah Esa Indonesia) yang diselenggarakan oleh Yayasan Pendidikan Tunggal Adicita Falsafah Esa di Medan menjadi Sekolah Tinggi
-              Manajemen Informatika dan komputer (STMIK) Pelita Nusantara Medan yang diselenggarakan oleh Yayasan Pendidikan Demokrat Cemerlang di Medan, melalui keputusan Menteri Pendidikan nasional Republik indonesia No.159/D/0/2007 pada
-              tanggal 22 Agustus 2007.
+              <span class="text-primary fw-bold fst-italic">STMIK Pelita Nusantara </span>didirikan pada tanggal 05 September 2003 dengan Akte Pendirian Nomor 16 yang dikeluarkan oleh Notaris Gongga Marpaung, SH. Sebelumnya terdapat
+              perubahan nama dan alih kelola dari Sekolah Tinggi Manajemen Informatika dan Komputer TAFEINDO(Tunggal Adicita Falsafah Esa Indonesia) yang diselenggarakan oleh Yayasan Pendidikan Tunggal Adicita Falsafah Esa di Medan menjadi
+              Sekolah Tinggi Manajemen Informatika dan komputer (STMIK) Pelita Nusantara Medan yang diselenggarakan oleh Yayasan Pendidikan Demokrat Cemerlang di Medan, melalui keputusan Menteri Pendidikan nasional Republik indonesia
+              No.159/D/0/2007 pada tanggal 22 Agustus 2007.
             </p>
           </div>
         </div>
@@ -149,7 +153,7 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">1. Special title treatment</h5>
+                <h5 class="card-title"><i class="bi bi-1-circle"></i></h5>
                 <p class="card-text">
                   Menyelenggarakan pendidikan tinggi bertaraf nasional di bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang bernilai
                   guna bagi masyarakat dan dapat diakses dengan mudah dari segala penjuru.
@@ -161,7 +165,7 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">1. Special title treatment</h5>
+                <h5 class="card-title"><i class="bi bi-2-circle"></i></h5>
                 <p class="card-text">Menyelenggarakan sistem pendidikan yang berkualitas dan integratif berbasis hasil penelitian yang selaras dengan kebutuhan stakeholder .</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
@@ -170,7 +174,7 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">1. Special title treatment</h5>
+                <h5 class="card-title"><i class="bi bi-3-circle"></i></h5>
                 <p class="card-text">
                   Melaksanakan penelitian-penelitian berkualitas dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang dapat
                   meningkatkan daya saing nasional.
@@ -182,7 +186,7 @@
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title">1. Special title treatment</h5>
+                <h5 class="card-title"><i class="bi bi-4-circle"></i></h5>
                 <p class="card-text">
                   Menyelenggarakan Layanan Pengabdian Kepada Masyarakat dalam rangka ikut memberikan kontribusi solusi bagi persoalan nasional, terutama dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis
                   Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika.
@@ -361,21 +365,21 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form id="myFormm">
+            <form id="myFormm" method="POST">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" autocomplete="off" />
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" name="Email" id="Email" aria-describedby="emailHelp" autocomplete="off" required />
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" autocomplete="off"></textarea>
-                <label for="floatingTextarea2">Comments</label>
+                <textarea class="form-control" placeholder="Leave a comment here" id="Message" name="Message" style="height: 100px" autocomplete="off" required></textarea>
+                <label for="Message">Comments</label>
               </div>
               <!-- <div class="mb-3 form-check mt-3">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" />
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div> -->
-              <button type="submit" class="btn btn-primary mt-3 mb-5">Submit</button>
+              <button type="submit" class="btn btn-primary mt-3 mb-5" id="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -389,6 +393,13 @@
             <h6>
               Copyright @ 2024 - <span> <a href="" class="text-danger" style="text-decoration: none">Pelita Nusantara</a> </span>
             </h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col d-flex justify-content-around">
+            <div class="name-sosmed"><a href=""></a><i class="bi bi-instagram"></i></div>
+            <div class="name-sosmed"><a href=""></a><i class="bi bi-facebook"></i></div>
+            <div class="name-sosmed"><a href=""></a><i class="bi bi-whatsapp"></i></div>
           </div>
         </div>
       </div>
