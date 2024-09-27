@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
 
     <!-- Sweetalert -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" />
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -319,15 +319,21 @@
         </div>
         <div class="row">
           <div class="col">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required />
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
-            </div>
-            <div class="btn btn-outline-success">Kirim</div>
+            <form action="" id="myForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="email@example.com" required />
+              </div>
+              <div class="mb-3">
+                <label for="comment" class="form-label">Comment</label>
+                <textarea class="form-control" id="comment" rows="3" placeholder="type your message" required></textarea>
+              </div>
+              <button class="btn btn-outline-success" type="submit">Kirim</button>
+            </form>
+            <!-- <form id="myForm">
+              <input type="text" id="name" placeholder="Nama" required />
+              <button type="submit">Kirim</button>
+            </form> -->
           </div>
         </div>
       </div>
@@ -373,7 +379,9 @@
 
     <!-- MyJs -->
     <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
