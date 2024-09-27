@@ -49,6 +49,11 @@ section {
   .sectionText h2 {
     font-size: 30px;
   }
+
+  #prodi {
+    width: 90%;
+    margin: 0 20px auto;
+  }
   #prodi img {
     max-width: 300px;
     max-height: 300px;
