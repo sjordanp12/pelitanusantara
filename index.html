@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <title>STMIK Pelita Nusantara</title>
+
+    <!-- MyCss -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- MyFont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Sweetalert -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="image/favicon-32x32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-light fixed-top p-4 navbar-expand-lg shadow">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pelita Nusantara</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">List Content</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#visiMisi">Visi & Misi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prodi">Program Studi</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#sarPras">Sarana & PraSarana</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Home Section -->
+    <section id="Home" data-aos="zoom-in">
+      <div class="container d-flex align-items-center justify-content-lg-center flex-wrap flex-lg-nowrap mt-5">
+        <div class="row mb-5">
+          <div class="col" data-aos="fade-right">
+            <img src="image/logoPenusa.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col sectionText" data-aos="fade-left">
+            <h2>Profil Singkat <span>STMIK Pelita Nusantara</span></h2>
+            <p>
+              PENUSA adalah singkatan dari Pelita Nusantara, STMIK Pelita Nunsatara Medan adalah instansi pendidikan yang bergerak di bidang informatika dan komputer. STMIK Pelita Nusantara memfokuskan diri untuk membantuk seluruh anak
+              bangsa, terutama putra-putri Sumatera Utara yang menginginkan pendidikan pada Sekolah Tinggi untuk mendapatkan sertifikat pendidikan Strata (S1) dan Diploma (D3). Untuk menunjukkan bahwa STMIK Pelita Nusantara Konsisten
+              terhadap pendidikan, setiap tahun menerima mahasiswa beasiswa penuh atau sebagian. Pada tahun 2016 hampir 1/2 mahasiswa aktif pelita nusantara adalah mahasiswa beasiswa. Hal ini sangat didukung oleh Yayasan Demokrat Cemerlang
+              yang menaungi STMIK Pelita Nusantara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Visi Misi Section -->
+    <section id="visiMisi">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col" data-aos="zoom-in">
+            <div class="sectionTitle text-center">
+              <h1>Visi & Misi STMIK Pelita Nusantara</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" data-aos="zoom-in">
+              <h3>Visi</h3>
+              <p>STMIK Pelita Nusantara Menjadi Perguruan Tinggi Unggul Dan Pusat Pendidikan Komputer Yang Menghasilkan Lulusan Berdaya Saing Nasional Pada Tahun 2024</p>
+            </div>
+          </div>
+          <div class="row">
+            <h3 data-aos="zoom-in">Misi</h3>
+            <div class="col" data-aos="zoom-in">
+              <div class="card shadow">
+                <p>
+                  Menyelenggarakan pendidikan tinggi bertaraf nasional di bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang bernilai
+                  guna bagi masyarakat dan dapat diakses dengan mudah dari segala penjuru.
+                </p>
+              </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+              <div class="card shadow">
+                <p>Menyelenggarakan sistem pendidikan yang berkualitas dan integratif berbasis hasil penelitian yang selaras dengan kebutuhan stakeholder .</p>
+              </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+              <div class="card shadow">
+                <p>
+                  Melaksanakan penelitian-penelitian berkualitas dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang dapat
+                  meningkatkan daya saing nasional.
+                </p>
+              </div>
+            </div>
+            <div class="col" data-aos="zoom-in">
+              <div class="card shadow">
+                <p>
+                  Menyelenggarakan Layanan Pengabdian Kepada Masyarakat dalam rangka ikut memberikan kontribusi solusi bagi persoalan nasional, terutama dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis
+                  Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section -->
+
+    <!-- ProgramStudiSection -->
+    <section id="prodi">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="zoom-in">
+            <div class="sectionTitle text-center">
+              <h1>Program Studi STMIK Pelita Nusantara</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+          <div class="col">
+            <h2>Program Studi Teknik Informatika</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-last order-lg-first">
+            <h2>Program Studi Teknik Rekayasa Komputer Jaringan</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+          <div class="col">
+            <h2>Program Studi Teknologi Informasi</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-last order-lg-first">
+            <h2>Program Studi Bisnis Digital</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col-md-6">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+          <div class="col">
+            <h2>Program Studi Manajemen Informatika</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+        </div>
+        <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
+          <div class="col order-lg-first">
+            <h2>Program Studi Rekayasa Perangkat Lunak</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
+          </div>
+          <div class="col-md-6 order-first">
+            <img src="image/prodi/prodi1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Prodi Section -->
+
+    <!-- SarPras Section -->
+    <section id="sarPras">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="zoom-in">
+            <div class="sectionTitle text-center">
+              <h1>Sarana & PraSarana STMIK Pelita Nusantara</h1>
+              <p>
+                Sarana & Prasarana yang ada di lingkungan STMIK Pelita Nusantara Medan telah memenuhi syarat mutu yang ditetapkan oleh BAN-PT. Dari segi kepemilikan, gedung-gedung maupun prasarana lain berstatus milik sendiri (milik yayasan
+                sebagai badan hukum penyelenggara STMIK). Penyediaan prasarana yang ada di STMIK Pelita Nusantara telah memenuhi standart persyaratan jumlah, artinya prasarana yang sudah tersedia sesuai dengan jumlah pengguna yang ada.
+                Semua prasarana yang tersedia dalam kondisi yang juga dalam kondisi sangat baik.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card m-3" data-aos="zoom-in">
+            <img src="image/logoPenusa.png" class="card-img-top img-fluid" alt="..." width="100%" height="auto" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-3" data-aos="zoom-in">
+            <img src="image/logoPenusa.png" class="card-img-top img-fluid" alt="..." width="100%" height="auto" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card m-3" data-aos="zoom-in">
+            <img src="image/logoPenusa.png" class="card-img-top img-fluid" alt="..." width="100%" height="auto" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End SarPras Section -->
+
+    <!-- Apa kata Mereka -->
+    <section id="testiMahasiswa">
+      <div class="container">
+        <div class="row">
+          <div class="col" data-aos="zoom-in">
+            <div class="sectionTitle text-center">
+              <h1>Apa Kata Mereka?</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+            <div class="card">
+              <img src="image/logoPenusa.png" width="50px" height="50px" alt="" />
+              <figure>
+                <blockquote class="blockquote mx-3">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-3">Afrilia Elin<cite title="Source Title"> mahasiswa penusa 2022</cite></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+            <div class="card">
+              <img src="image/logoPenusa.png" width="50px" height="50px" alt="" />
+              <figure>
+                <blockquote class="blockquote mx-3">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-3">Harprit Singh <cite title="Source Title">mahasiswa penusa 2022</cite></figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex" data-aos="zoom-in">
+            <div class="card">
+              <img src="image/logoPenusa.png" width="50px" height="50px" alt="" />
+              <figure>
+                <blockquote class="blockquote mx-3">
+                  <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-3">Onike Sitorus <cite title="Source Title">mahasiswa penusa 2022</cite></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End -->
+
+    <!-- Contact Penusa -->
+    <section id="contact">
+      <div class="container" style="width: 95%; max-width: 500px" data-aos="zoom-in">
+        <div class="row">
+          <div class="col">
+            <div class="sectionTitle text-center">
+              <h1>Hubungi Pelita Nusantara</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="btn btn-outline-success">Kirim</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-5">
+        <!-- Section: Social media -->
+
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05)">
+        © 2024 Copyright:
+        <a class="text-body" href="https://">pelitanusantara</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- MyJs -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
