@@ -26,44 +26,45 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-light fixed-top p-4 navbar-expand-lg shadow">
+    <nav class="navbar navbar-dark fixed-top p-4 navbar-expand-lg shadow">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">Pelita Nusantara</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">List Content</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#visiMisi">Visi & Misi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#prodi">Program Studi</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#sarPras">Sarana & PraSarana</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-            </ul>
-            <!-- <form class="d-flex mt-3" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+        <div class="mynavbar">
+          <div class="offcanvas w-100 offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header text-light">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">List Content</h5>
+              <button type="button" class="btn btn-close btn-outline-secondary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a class="nav-link active special" aria-current="page" href="#"> Home</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a class="nav-link" href="#visiMisi">Visi & Misi</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas" aria-label="Close">
+                  <a class="nav-link" href="#prodi">Program Studi</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Lainnya </a>
+                  <ul class="dropdown-menu">
+                    <li data-bs-dismiss="offcanvas" aria-label="Close"><a class="dropdown-item" href="#sarPras">Sarana & PraSarana</a></li>
+                    <li data-bs-dismiss="offcanvas" aria-label="Close"><a class="dropdown-item" href="#lokasiPenusa">Lokasi Kampus Pelita Nusantara</a></li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="myregist">
+                <div class="btn btn-outline-light text-white">Daftar Mahasiswa Baru</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -110,29 +111,48 @@
           </div>
           <div class="row">
             <h3 data-aos="zoom-in">Misi</h3>
-            <div class="col" data-aos="zoom-in">
+            <div class="col mt-5" data-aos="zoom-in">
               <div class="card shadow">
+                <div class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-1-square-fill" style="margin-top: -130px" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm7.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+                  </svg>
+                </div>
                 <p>
                   Menyelenggarakan pendidikan tinggi bertaraf nasional di bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang bernilai
                   guna bagi masyarakat dan dapat diakses dengan mudah dari segala penjuru.
                 </p>
               </div>
             </div>
-            <div class="col" data-aos="zoom-in">
+            <!-- <div class="col" data-aos="zoom-in">
               <div class="card shadow">
                 <p>Menyelenggarakan sistem pendidikan yang berkualitas dan integratif berbasis hasil penelitian yang selaras dengan kebutuhan stakeholder .</p>
               </div>
-            </div>
+            </div> -->
             <div class="col" data-aos="zoom-in">
-              <div class="card shadow">
+              <div class="card example1" style="padding: 100px">
+                <div class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-2-square-fill" style="margin-top: -230px" viewBox="0 0 16 16">
+                    <path
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm4.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306"
+                    />
+                  </svg>
+                </div>
                 <p>
                   Melaksanakan penelitian-penelitian berkualitas dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika yang dapat
                   meningkatkan daya saing nasional.
                 </p>
               </div>
             </div>
-            <div class="col" data-aos="zoom-in">
+            <div class="col mt-5" data-aos="zoom-in">
               <div class="card shadow">
+                <div class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" fill="currentColor" class="bi bi-3-square-fill" style="margin-top: -130px" viewBox="0 0 16 16">
+                    <path
+                      d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm5.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318"
+                    />
+                  </svg>
+                </div>
                 <p>
                   Menyelenggarakan Layanan Pengabdian Kepada Masyarakat dalam rangka ikut memberikan kontribusi solusi bagi persoalan nasional, terutama dalam bidang Teknik Informatika, Rekayasa Perangkat Lunak, Teknologi Informasi, Bisnis
                   Digital, Teknologi Rekayasa Komputer Jaringan dan Manajemen Informatika.
@@ -157,7 +177,7 @@
         </div>
         <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
           <div class="col-md-6">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
           <div class="col">
             <h2>Program Studi Teknik Informatika <span class="fst-italic text-secondary">(S1)</span></h2>
@@ -170,12 +190,12 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
           </div>
           <div class="col-md-6 order-first">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
         </div>
         <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
           <div class="col-md-6">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
           <div class="col">
             <h2>Program Studi Teknologi Informasi <span class="fst-italic text-secondary">(S1)</span></h2>
@@ -188,12 +208,12 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
           </div>
           <div class="col-md-6 order-first">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
         </div>
         <div class="row mb-5 justify-content-center align-items-center" data-aos="zoom-in">
           <div class="col-md-6">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
           <div class="col">
             <h2>Program Studi Manajemen Informatika <span class="fst-italic text-secondary">(S1)</span></h2>
@@ -206,7 +226,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit harum nisi asperiores consequuntur, aperiam deleniti, qui autem magnam officia libero iste repellat dolore dolores illo id cum natus! Dolores?</p>
           </div>
           <div class="col-md-6 order-first">
-            <img src="image/prodi/prodi1.jpg" alt="" />
+            <img src="image/prodi/prodi1.jpg" class="rounded" alt="" />
           </div>
         </div>
       </div>
@@ -307,6 +327,53 @@
     </section>
     <!-- End -->
 
+    <!-- Locate Campuss -->
+    <section id="lokasiPenusa">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sectionTitle text-center" data-aos="zoom-in"><h1>Lokasi Kampus STMIK Pelita Nusantara</h1></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" data-aos="zoom-in">
+            <h5 class="text-center">
+              Kampus 1
+              <hr />
+              <span class="text-secondary fst-italic" style="font-size: 15px">STMIK PELITA NUSANTARA, Jl. Iskandar Muda No.1, Merdeka, Kec. Medan Baru, Kota Medan, Sumatera Utara 20222</span>
+            </h5>
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3982.065635015725!2d98.66298382570903!3d3.572378750403706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d3.5723461!2d98.668773!4m5!1s0x30313029cea1eebb%3A0x2b345f687b341739!2sJl.%20Iskandar%20Muda%20No.1%2C%20Merdeka%2C%20Kec.%20Medan%20Baru%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020222!3m2!1d3.572177!2d98.6605778!5e0!3m2!1sid!2sid!4v1727811811434!5m2!1sid!2sid"
+              width="100%"
+              height="450px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-md-6" data-aos="zoom-in">
+            <h5 class="text-center">
+              Kampus 2
+              <hr />
+              <span class="text-secondary fst-italic" style="font-size: 15px">Jl. Lintas Sumatra, Tj. Garbus Satu, Kec. Lubuk Pakam, Kabupaten Deli Serdang, Sumatera Utara 20551</span>
+            </h5>
+            <iframe
+              class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63713.80291369967!2d98.87382739677636!3d3.561519281599356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303148619328435d%3A0xf1eda21878bba7dc!2sKampus%202%20STMIK%20Pelita%20Nusantara!5e0!3m2!1sid!2sid!4v1727811941515!5m2!1sid!2sid"
+              width="100%"
+              height="450px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Penusa -->
     <section id="contact">
       <div class="container" style="width: 95%; max-width: 500px" data-aos="zoom-in">
@@ -317,9 +384,9 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row rounded" style="border: 1px solid #6c757d; padding: 20px">
           <div class="col">
-            <form action="" id="myForm">
+            <form action="" id="myForm" autocomplete="off">
               <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="email@example.com" required />
@@ -328,12 +395,11 @@
                 <label for="comment" class="form-label">Comment</label>
                 <textarea class="form-control" id="comment" rows="3" placeholder="type your message" required></textarea>
               </div>
-              <button class="btn btn-outline-success" type="submit">Kirim</button>
+              <div class="mybtn text-center">
+                <button class="btn btn-outline-success m-2" type="submit">Kirim</button>
+                <button class="btn btn-outline-secondary m-2" type="reset">Hapus</button>
+              </div>
             </form>
-            <!-- <form id="myForm">
-              <input type="text" id="name" placeholder="Nama" required />
-              <button type="submit">Kirim</button>
-            </form> -->
           </div>
         </div>
       </div>
@@ -349,19 +415,11 @@
         <!-- Facebook -->
         <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-        <!-- Twitter -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-        <!-- Google -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39" href="#!" role="button"><i class="fab fa-google"></i></a>
-
         <!-- Instagram -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #000000" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-        <!-- Linkedin -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-        <!-- Github -->
-        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+        <!-- Whatsapp -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #009625" href="#!" role="button"><i class="fab fa-whatsapp"></i></a>
 
         <!-- Section: Social media -->
       </div>
@@ -387,5 +445,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </body>
 </html>
