@@ -1,15 +1,31 @@
 :root {
-  --judulSection: #4b70f5;
+  --judulSection: #16325b;
   --background: #f5f5f7;
+  --fontColor: #424769;
+  --ungu: #6c48c5;
+  --coba: #16325b;
 }
 
 * {
   font-family: 'Outfit', sans-serif;
+  color: var(--fontColor);
+}
+/* Navbar Title */
+
+.navbar {
+  background-color: var(--coba) !important;
+}
+.navbar-brand {
+  font-size: 30px;
+}
+.offcanvas {
+  transition: all ease-in-out 0.7s;
 }
 
-.navbar-nav {
-  transition: all ease-in-out 0.3s !important;
+.myregist .btn:hover {
+  color: black !important;
 }
+
 /* Section Style */
 section {
   padding: 150px 0;
@@ -21,6 +37,7 @@ section {
 
 .sectionText span {
   color: var(--judulSection);
+  font-weight: bold;
 }
 
 .card {
@@ -31,18 +48,33 @@ section {
 
 .sectionTitle h1 {
   padding-bottom: 20px;
+  color: var(--judulSection);
 }
 /* Visi Misi Style */
 #visiMisi,
-#sarPras {
+#sarPras,
+#lokasiPenusa {
   background-color: var(--background);
 }
 
-/* #Home img {
-  max-width: 300px;
-} */
-/* Prodi Style */
+#lokasiPenusa h5 {
+  margin-top: 20px;
+}
 
+.fab {
+  color: white;
+}
+
+.fab:hover {
+  opacity: 80%;
+}
+
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
 /* Breakpoint  */
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -54,6 +86,7 @@ section {
     width: 90%;
     margin: 0 20px auto;
   }
+
   #prodi h2 {
     font-size: 20px;
     margin: 10px 0;
@@ -76,10 +109,42 @@ section {
     max-width: 500px !important;
     height: auto !important;
   }
+
+  .offcanvas,
+  .dropdown {
+    background-color: var(--coba);
+    text-align: center;
+    opacity: 95%;
+  }
+
+  .dropdown-item {
+    text-align: center;
+  }
+  /* .special {
+    color: var(--fontColor) !important;
+  }
+    
+  .offcanvas-body li a {
+    color: var(--fontColor);
+  } */
+
+  .example1 {
+    margin-top: 50px !important;
+  }
+  .myregist {
+    margin-top: 10px;
+  }
 }
 
 @media (min-width: 998px) {
   #Home img {
     max-width: 300px;
+  }
+
+  #lokasiPenusa h5 {
+    margin-top: 30px;
+  }
+  .example1 {
+    box-shadow: 5px 5px 10px var(--ungu);
   }
 }
